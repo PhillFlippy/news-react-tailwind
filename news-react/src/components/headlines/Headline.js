@@ -1,6 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+/**
+ * The individual article card.
+ * @param {string} title the title of the article
+ * @param {string} author Who wrote the article
+ * @param {string} source What website the article is referencing
+ * @param {string} image The related article image url
+ * @param {string} description A short description on the content of the article
+ * 
+ */
 function Headline({title, author, source, image, description}) {
     return (
 <div className="min-w-full lg:max-w-full lg:flex mt-10 justify-center shadow-sm">
@@ -27,7 +35,10 @@ function Headline({title, author, source, image, description}) {
 }
 
 Headline.propTypes = {
-
+title: PropTypes.string.isRequired,
+author: PropTypes.string.isRequired,
+source: PropTypes.string.isRequired,
+description: PropTypes.string.isRequired,
 }
 
 export default Headline

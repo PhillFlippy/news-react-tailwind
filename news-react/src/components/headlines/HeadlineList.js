@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Headline from './Headline';
+/**
+ * Component to map over the list of articles applying styling to the overal list
+ * @param {array} data List of articles 
+ */
 function HeadlineList({data}) {
     if(data.length === 0){
         return (
